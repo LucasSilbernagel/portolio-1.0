@@ -3,10 +3,200 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web development portfolio for Lucas Silbernagel">
+
   <title>Lucas Silbernagel | Front-End Developer</title>
-  <link rel="stylesheet" href="/styles/style.css">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./styles/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./styles/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./styles/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./styles/assets/favicon/site.webmanifest">
+
+  <!-- Import Dev Icons -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+  <!-- Import Font Awesome -->
+  <script src="https://kit.fontawesome.com/6d54e0ab0d.js" crossorigin="anonymous"></script>
+
+  <!-- Import stylesheet -->
+  <link rel="stylesheet" href="./styles/style.css">
+
 </head>
+
 <body>
-  
+
+  <!-- Header -->
+  <header id="header">
+    <div class="wrapper">
+
+      <!-- Logo -->
+      <img src="./styles/assets/logo.png" alt="Lucas Silbernagel logo" class="logo">
+
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main photo and header -->
+      <div class="hero">
+        <div class="headerText">
+          <h1>Lucas Silbernagel</h1>
+          <h2>Front-End Developer</h2>
+          <h2><span>&</span> Former anthropologist</h2>
+          <a href="#contact">Hire Me!</a>
+        </div>
+        <div class="headerImage">
+          <img src="./styles/assets/profilePhoto.jpg" alt="Lucas Silbernagel">
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <div class="wrapper">
+
+      <!-- About me -->
+      <section class="about" id="about">
+        <h3>About</h3>
+        <p>Hi, I'm Lucas! As a recent graduate of Juno College, I’m an expert in front-end web development tools including React, jQuery, JavaScript (ES6), HTML5, CSS3, Firebase, SCSS, Git, APIs, and more.</p>
+        <p>Prior to attending Juno College, I earned a Master’s degree in sociocultural anthropology from the University of Toronto. Anthropology is the study of humanity, human behaviour, culture, and society in both the past and present. This dovetails perfectly with the goal of user experience (UX) design, which is to understand and learn from product users in order to improve the experience and ease of use for those users. I’m on a mission to build websites and applications that can be enjoyed on any modern device and by any user, one line of code at a time!</p>
+        <p>I also have considerable experience working in sales and customer service, where I honed skills such as client management, troubleshooting technical problems, content management systems, and training new teammates.</p>
+        <p>If you are interested in connecting with me, please get in touch!</p>
+      </section>
+
+      <!-- Skills -->
+      <section class="skills" id="skills">
+        <h3>Skills</h3>
+        <ul class="skillsContainer">
+          <li>
+            <i class="devicon-html5-plain"></i>
+            <h4>HTML5</h4>
+          </li>
+          <li>
+            <i class="devicon-css3-plain"></i>
+            <h4>CSS3</h4>
+          </li>
+          <li>
+            <i class="devicon-javascript-plain"></i>
+            <h4>JavaScript</h4>
+          </li>
+          <li>
+            <i class="devicon-react-original"></i>
+            <h4>React</h4>
+          </li>
+          <li>
+            <i class="devicon-jquery-plain"></i>
+            <h4>jQuery</h4>
+          </li>
+          <li>
+            <i class="devicon-sass-original"></i>
+            <h4>SASS</h4>
+          </li>
+          <li>
+            <i class="fab fa-gripfire"></i>
+            <h4>Firebase</h4>
+          </li>
+          <li>
+            <i class="devicon-git-plain"></i>
+            <h4>Git</h4>
+          </li>
+          <li>
+            <i class="devicon-github-plain"></i>
+            <h4>GitHub</h4>
+          </li>
+          <li>
+            <i class="devicon-visualstudio-plain"></i>
+            <h4>VS Code</h4>
+          </li>
+          <li>
+            <i class="fas fa-universal-access"></i>
+            <h4>Web Accessibility</h4>
+          </li>
+          <li>
+            <i class="fas fa-users"></i>
+            <h4>Collaboration</h4>
+          </li>
+          <li>
+            <i class="fas fa-mobile-alt"></i>
+            <h4>Responsive Design</h4>
+          </li>
+        </ul>
+      </section>
+
+      <!-- My projects -->
+      <section class="projects" id="projects">
+        <!-- Image screen shots at 700px/550px -->
+        <h3>Projects</h3>
+        <ul class="projectContainer">
+          <li>
+            <div class="projectImage">
+              <img src="./styles/assets/battleRockets.png" alt="Battle Rockets game">
+            </div>
+            <h4>Battle Rockets!</h4>
+            <p>A two-player battleship game that uses SpaceX rockets instead of battleships, with data pulled from the SpaceX Rocket API. Built in collaboration with <a href="https://alisacodes.dev/">Alisa Kitkina</a>, <a href="http://marichka.ca/">Mariya Morosovska</a>, and <a href="http://www.mcabrera.ca/">Miguel Cabrera</a>.</p>
+            <p><span>React</span> <span>REST API</span> <span>Mob Programming</span> <span>Remote Collaboration</span></p>
+            <a href="https://github.com/rocketBattle/battleRockets" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://rocketbattle.github.io/battleRockets/" target="_blank" rel="noopener noreferrer">Live</a>
+          </li>
+          <li>
+            <div class="projectImage">
+              <img src="./styles/assets/myUser.png" alt="MyUser, a user persona generator">
+            </div>
+            <h4>MyUser</h4>
+            <p>User personas are semi-fictional characters that represent your customers or product users, ideally based on real research and data. Create a user persona for one or more of your users, or look at others that have been created below! This will help you to think about the unique needs of your users and build or improve products to meet those needs.</p>
+            <p><span>React</span> <span>Firebase</span></p>
+            <a href="https://github.com/LucasSilbernagel/my-user" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://lucassilbernagel.github.io/my-user/" target="_blank" rel="noopener noreferrer">Live</a>
+          </li>
+          <li>
+            <div class="projectImage">
+              <img src="./styles/assets/triviaQuest.png" alt="Trivia Quest, a trivia game based on Trivial Pursuit">
+            </div>
+            <h4>Trivia Quest</h4>
+            <p>A trivia game based on Trivial Pursuit. Choose your difficulty level and try to score in all six categories! Built in collaboration with <a href="http://heatherandreadis.com/">Heather Andreadis</a>.</p>
+            <p><span>jQuery</span> <span>REST API</span> <span>Pair Programming</span> <span>Remote Collaboration</span></p>
+            <a href="https://github.com/heatherAndLucas/triviaQuest" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://heatherandlucas.github.io/triviaQuest/" target="_blank" rel="noopener noreferrer">Live</a>
+          </li>
+          <li>
+            <div class="projectImage"></div>
+          </li>
+          <li>
+            <div class="projectImage"></div>
+          </li>
+          <li>
+            <div class="projectImage"></div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Blog -->
+      <section class="blog" id="blog">
+
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrapper">
+
+      <!-- Contact information -->
+      <section class="contact" id="contact">
+
+      </section>
+
+    </div>
+  </footer>
 </body>
 </html>
