@@ -1,0 +1,24 @@
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  text-align: center;
+  width: 50%;
+  padding-top: 10px;
+}
+
+.skills li:hover,
+.skills li:focus {
+  color: $accent;
+  background: $sectionBackground;
+}
+
+.skills i {
+  font-size: 3rem;
+}
+
+.skills h4 {
+  margin-top: 5px;
+}
