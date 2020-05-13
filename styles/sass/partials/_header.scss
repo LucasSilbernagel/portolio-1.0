@@ -1,6 +1,9 @@
+header {
+  background: $sectionBackground;
+}
+
 .logo {
   position: relative;
-  // width: 60px;
   width: 100px;
   left: 20px;
   top: 15px;
@@ -29,10 +32,22 @@
 
 .mainNav {
   display: none;
+  font-size: 1.5rem;
+}
+
+.mainNav ul {
+  max-width: 800px;
+}
+
+.mainNav li {
+  border-bottom: 1px solid $sectionBackground;
+}
+
+.mainNav li:hover {
+  border-bottom: 1px solid $black;
 }
 
 div.hero {
-  background: $sectionBackground;
   margin-top: 10px;
 }
 
@@ -203,7 +218,9 @@ h2 {
 }
 
 .headerImage {
+  margin: 0 auto;
   margin-top: 50px;
+  max-width: 350px;
 }
 
 .profilePhoto {
