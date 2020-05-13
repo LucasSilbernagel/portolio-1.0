@@ -20,6 +20,9 @@
   <!-- Import Font Awesome -->
   <script src="https://kit.fontawesome.com/6d54e0ab0d.js" crossorigin="anonymous"></script>
 
+  <!-- Import Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet"> 
+
   <!-- Import stylesheet -->
   <link rel="stylesheet" href="./styles/style.css">
 
@@ -34,8 +37,8 @@
       <!-- Logo -->
       <img src="./styles/assets/logo.png" alt="Lucas Silbernagel logo" class="logo">
 
-      <!-- Navigation -->
-      <nav>
+      <!-- Desktop Navigation -->
+      <nav class="mainNav">
         <ul>
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -46,16 +49,38 @@
         </ul>
       </nav>
 
+      <!-- Mobile Navigation -->
+      <div class="hamburger">
+        <input type="checkbox" id="hamburgerToggle" name="hamburgerToggle" class="hamburgerToggle">
+        <label for="hamburgerToggle">
+            <div class="hamburgerLines">
+                <div class="hamburgerLine line1"></div>
+                <div class="hamburgerLine line2"></div>
+                <div class="hamburgerLine line2b middle"></div>
+                <div class="hamburgerLine line3"></div>
+            </div>
+        </label>
+        <ul class="mobileNav">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
       <!-- Main photo and header -->
       <div class="hero">
         <div class="headerText">
           <h1>Lucas Silbernagel</h1>
           <h2>Front-End Developer</h2>
-          <h2><span>&</span> Former anthropologist</h2>
-          <a href="#contact">Hire Me!</a>
+          <h2>&</h2>
+          <h2 class="former">Former Anthropologist</h2>
+          <a class="hire" href="#contact">Hire Me!</a>
         </div>
         <div class="headerImage">
-          <img src="./styles/assets/profilePhoto.jpg" alt="Lucas Silbernagel">
+          <img class="profilePhoto" src="./styles/assets/profilePhoto.jpg" alt="Lucas Silbernagel">
         </div>
 
       </div>
@@ -149,8 +174,8 @@
             <h4>Battle Rockets!</h4>
             <p>A two-player battleship game that uses SpaceX rockets instead of battleships, with data pulled from the SpaceX Rocket API. Built in collaboration with <a href="https://alisacodes.dev/">Alisa Kitkina</a>, <a href="http://marichka.ca/">Mariya Morosovska</a>, and <a href="http://www.mcabrera.ca/">Miguel Cabrera</a>.</p>
             <p><span>React</span> <span>REST API</span> <span>SCSS</span> <span>Mob Programming</span> <span>Remote Collaboration</span></p>
-            <a href="https://github.com/rocketBattle/battleRockets" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://rocketbattle.github.io/battleRockets/" target="_blank" rel="noopener noreferrer">Live</a>
+            <a class="projectLink" href="https://github.com/rocketBattle/battleRockets" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="projectLink" href="https://rocketbattle.github.io/battleRockets/" target="_blank" rel="noopener noreferrer">Live</a>
           </li>
           <li>
             <div class="projectImage">
@@ -159,8 +184,8 @@
             <h4>MyUser</h4>
             <p>User personas are semi-fictional characters that represent your customers or product users, ideally based on real research and data. Create a user persona for one or more of your users, or look at others that have been created below! This will help you to think about the unique needs of your users and build or improve products to meet those needs.</p>
             <p><span>React</span> <span>Firebase</span> <span>SCSS</span></p>
-            <a href="https://github.com/LucasSilbernagel/my-user" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://lucassilbernagel.github.io/my-user/" target="_blank" rel="noopener noreferrer">Live</a>
+            <a class="projectLink" href="https://github.com/LucasSilbernagel/my-user" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="projectLink" href="https://lucassilbernagel.github.io/my-user/" target="_blank" rel="noopener noreferrer">Live</a>
           </li>
           <li>
             <div class="projectImage">
@@ -169,8 +194,8 @@
             <h4>Trivia Quest</h4>
             <p>A trivia game based on Trivial Pursuit. Choose your difficulty level and try to score in all six categories! Built in collaboration with <a href="http://heatherandreadis.com/">Heather Andreadis</a>.</p>
             <p><span>jQuery</span> <span>REST API</span> <span>HTML5</span> <span>SCSS</span> <span>Pair Programming</span> <span>Remote Collaboration</span></p>
-            <a href="https://github.com/heatherAndLucas/triviaQuest" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://heatherandlucas.github.io/triviaQuest/" target="_blank" rel="noopener noreferrer">Live</a>
+            <a class="projectLink" href="https://github.com/heatherAndLucas/triviaQuest" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="projectLink" href="https://heatherandlucas.github.io/triviaQuest/" target="_blank" rel="noopener noreferrer">Live</a>
           </li>
           <li>
             <div class="projectImage">
@@ -179,8 +204,8 @@
             <h4>Speedy Click!</h4>
             <p>A simple click counter game built with jQuery. See how many times you can click in 10 seconds!</p>
             <p><span>jQuery</span> <span>HTML5</span> <span>SCSS</span> <span>CSS3</span></p>
-            <a href="https://github.com/LucasSilbernagel/speedyClick" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://lucassilbernagel.github.io/speedyClick/" target="_blank" rel="noopener noreferrer">Live</a>
+            <a class="projectLink" href="https://github.com/LucasSilbernagel/speedyClick" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="projectLink" href="https://lucassilbernagel.github.io/speedyClick/" target="_blank" rel="noopener noreferrer">Live</a>
           </li>
           <li>
             <div class="projectImage">
@@ -189,8 +214,8 @@
             <h4>Sunshine</h4>
             <p>A multi-page, fully responsive travel website based on a Photoshop design.</p>
             <p><span>HTML5</span> <span>SCSS</span> <span>Responsive Design</span></p>
-            <a href="https://github.com/LucasSilbernagel/sunshine" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://lucassilbernagel.github.io/sunshine/" target="_blank" rel="noopener noreferrer">Live</a>
+            <a class="projectLink" href="https://github.com/LucasSilbernagel/sunshine" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="projectLink" href="https://lucassilbernagel.github.io/sunshine/" target="_blank" rel="noopener noreferrer">Live</a>
           </li>
           <li>
             <div class="projectImage">
@@ -199,8 +224,8 @@
             <h4>Bikerland</h4>
             <p>A single-page, fully responsive website based on a Photoshop design. No Flexbox or Grid styles were used, only floats.</p>
             <p><span>HTML5</span> <span>CSS3</span> <span>Responsive Design</span> <span>Floats</span></p>
-            <a href="https://github.com/LucasSilbernagel/bikerland" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://lucassilbernagel.github.io/bikerland/" target="_blank" rel="noopener noreferrer">Live</a>
+            <a class="projectLink" href="https://github.com/LucasSilbernagel/bikerland" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="projectLink" href="https://lucassilbernagel.github.io/bikerland/" target="_blank" rel="noopener noreferrer">Live</a>
           </li>
         </ul>
       </section>
@@ -216,7 +241,7 @@
             <h5>By Lucas Silbernagel, 29 February 2020</h5>
             <p>Like many people, my road to becoming a front-end developer was a long and winding one. While it seems as though certain rare souls easily stumble upon a skillset and career path that defines and motivates them, I’m definitely more of a jack of all trades, master of none. From high school onward, my interests and strengths included languages, writing, martial arts, music, history, film, and more. I remember enjoying a basic web design course in high school, but with my focus constantly shifting between a myriad of other interests, it was difficult to imagine pursuing a career in that field, at least back then.</p>
             <p>I moved to Toronto in 2014 to pursue a Master of Arts degree in sociocultural anthropology at U of T. I planned to later pursue a PhD and become a professor of anthropology, but even as I boarded the plane to Toronto I had serious doubts about that career path.</p>
-            <a href="https://medium.com/@LucasCodePro/im-a-web-developer-now-from-decoding-human-behaviour-to-building-the-modern-internet-b7c36a34dfd9" target="_blank" rel="noopener noreferrer">Read more on Medium!</a>
+            <a class="blogLink" href="https://medium.com/@LucasCodePro/im-a-web-developer-now-from-decoding-human-behaviour-to-building-the-modern-internet-b7c36a34dfd9" target="_blank" rel="noopener noreferrer">Read more on Medium!</a>
           </li>
           <li>
             <img src="./styles/assets/braille.jpeg" alt="Person using a braille writer.">
@@ -225,10 +250,10 @@
             <h5>By Lucas Silbernagel, 13 April 2020</h5>
             <p>According to the World Wide Web Consortium (W3C), the main international standards organization for the internet, web accessibility means designing web experiences and technologies that can be used and contributed to by anybody. This includes people with auditory, cognitive, neurological, physical, speech, and visual disabilities.</p>
             <p>The benefits of web accessibility extend far beyond these groups, however. Consider the elderly, whose abilities have changed due to aging. Consider people with “temporary disabilities” like a broken arm or missing glasses. Consider the wide variety of scenarios that limit or change how people interact with the internet, including devices with smaller screens like smart watches, regions with slow or poor internet connections, limited bandwidth, and situations where people either can’t listen to audio due to their surroundings or can’t easily view their screen due to bright sunlight. Web accessibility practices make the internet better for everybody by overcoming these and other obstacles.</p>
-            <a href="https://medium.com/@LucasCodePro/the-blind-leading-the-sighted-prioritizing-accessibility-on-the-modern-web-db7c6637cd5e" target="_blank" rel="noopener noreferrer">Read more on Medium!</a>
+            <a class="blogLink" href="https://medium.com/@LucasCodePro/the-blind-leading-the-sighted-prioritizing-accessibility-on-the-modern-web-db7c6637cd5e" target="_blank" rel="noopener noreferrer">Read more on Medium!</a>
           </li>
         </ul>
-        <h4>Check out my other blog posts on <a href="https://medium.com/@LucasCodePro">Medium</a>!</h4>
+        <h4>Check out my other blog posts on <a class="blogLink" href="https://medium.com/@LucasCodePro">Medium</a>!</h4>
       </section>
     </div>
   </main>
