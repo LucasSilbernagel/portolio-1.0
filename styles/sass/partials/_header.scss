@@ -1,16 +1,39 @@
 .logo {
-  position: absolute;
-  width: 60px;
+  position: relative;
+  // width: 60px;
+  width: 100px;
   left: 20px;
-  top: 20px;
+  top: 15px;
+  .logoImage {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+/* Tooltip text on logo */
+.toolTipText {
+  visibility: hidden;
+  width: 250px;
+  background: lighten($accent, 20%);
+  color: $black;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+}
+.logo:hover .toolTipText {
+  visibility: visible;
 }
 
 .mainNav {
   display: none;
 }
 
-.hero {
+div.hero {
   background: $sectionBackground;
+  margin-top: 10px;
 }
 
 .hire {

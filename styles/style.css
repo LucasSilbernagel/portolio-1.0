@@ -318,18 +318,42 @@ p {
 }
 
 .logo {
-  position: absolute;
-  width: 60px;
+  position: relative;
+  width: 100px;
   left: 20px;
-  top: 20px;
+  top: 15px;
+}
+
+.logo .logoImage {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+/* Tooltip text on logo */
+.toolTipText {
+  visibility: hidden;
+  width: 250px;
+  background: #f7a6a2;
+  color: #2B2B2B;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+}
+
+.logo:hover .toolTipText {
+  visibility: visible;
 }
 
 .mainNav {
   display: none;
 }
 
-.hero {
+div.hero {
   background: #F5F4F2;
+  margin-top: 10px;
 }
 
 .hire {
@@ -597,4 +621,70 @@ span {
   background: #ea2016;
   -webkit-box-shadow: #2B2B2B 2px 5px;
           box-shadow: #2B2B2B 2px 5px;
+}
+
+.blogPosts li {
+  background: #F5F4F2;
+  margin-bottom: 30px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.blogPosts h5 {
+  color: #BABABA;
+}
+
+.blogPosts p {
+  text-align: left;
+}
+
+.blog a {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: #2B2B2B 5px 10px;
+          box-shadow: #2B2B2B 5px 10px;
+  text-transform: uppercase;
+  background: #EE4D45;
+  color: #FFFFFF;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.blog a:hover,
+.blog a:focus {
+  cursor: pointer;
+  background: #ea2016;
+}
+
+.blog a:active {
+  background: #ea2016;
+  -webkit-box-shadow: #2B2B2B 2px 5px;
+          box-shadow: #2B2B2B 2px 5px;
+}
+
+.blog .mediumLink {
+  background: #FFFFFF;
+  color: #EE4D45;
+  text-transform: none;
+  padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  display: inline;
+}
+
+.blog .mediumLink:hover {
+  background: #FFFFFF;
+  border-bottom: 1px solid #2B2B2B;
+}
+
+.moreBlog,
+.blog .mediumLink {
+  font-size: 1.2rem;
+  text-align: center;
 }
