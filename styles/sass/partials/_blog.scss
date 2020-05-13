@@ -1,8 +1,21 @@
+.blogPosts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .blogPosts li {
   background: $sectionBackground;
+  margin: 0 auto;
   margin-bottom: 30px;
   padding-bottom: 40px;
   text-align: center;
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+.blogPosts img {
+  border-radius: 10px 10px 0 0;
 }
 
 .blogPosts h5 {
@@ -11,6 +24,7 @@
 
 .blogPosts p {
   text-align: left;
+  padding: 10px;
 }
 
 .blog a {

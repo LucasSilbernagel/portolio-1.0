@@ -2,14 +2,16 @@ footer {
   background: $sectionBackground;
 }
 
-footer h4 {
+footer .contact h4 {
   text-align: center;
+  color: $accent;
 }
 
 fieldset {
   border: none;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-size: 1.2rem;
 }
 
@@ -17,7 +19,12 @@ input,
 textarea {
   margin-bottom: 10px;
   padding: 5px;
+  width: 100%;
 }
+
+// input {
+//   max-width: 357.2px;
+// }
 
 textarea {
   height: 200px;
@@ -55,7 +62,10 @@ footer button:active {
   display: flex;
   justify-content: space-evenly;
   font-size: 2.5rem;
+  margin: 0 auto;
   margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 500px;
 }
 
 .social a:hover,
