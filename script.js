@@ -28,3 +28,16 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+// // typed.js
+// import Typed from 'typed.js';
+
+const typed = new Typed('#former', {
+  strings: ["Former Anthropologist", "Guitar Novice", "Trivia Whiz", "Film Fanatic", "History Nerd", "Information Sponge"],
+  typeSpeed: 70,
+  backSpeed: 20,
+  backDelay: 2000,
+  loop: true,
+  loopCount: Infinity,
+  showCursor: false
+});

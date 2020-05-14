@@ -514,6 +514,7 @@ div.hero {
 h1 {
   margin-top: 0;
   font-size: 2rem;
+  text-shadow: 3px 3px #BABABA;
 }
 
 h2 {
@@ -522,6 +523,7 @@ h2 {
 
 .former {
   margin-bottom: 50px;
+  height: 28px;
 }
 
 .hire {
