@@ -2,10 +2,6 @@
 const scroll = new SmoothScroll('a[href*="#"]');
 
 // animate-on-scroll
-AOS.init();
-
-// You can also pass an optional settings object
-// below listed default settings
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -26,12 +22,9 @@ AOS.init({
   once: false, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
 });
 
 // // typed.js
-// import Typed from 'typed.js';
-
 const typed = new Typed('#former', {
   strings: ["Former Anthropologist", "Guitar Novice", "Trivia Whiz", "Film Fanatic", "History Nerd", "Information Sponge"],
   typeSpeed: 70,
