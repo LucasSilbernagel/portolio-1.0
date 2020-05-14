@@ -26,7 +26,8 @@ header {
   z-index: 1;
   top: 50px;
 }
-.logo:hover .toolTipText {
+.logo:hover .toolTipText,
+.logo:focus .toolTipText {
   visibility: visible;
 }
 
@@ -89,7 +90,7 @@ div.hero {
   
   .mobileNav li:hover,
   .mobileNav li:focus {
-    background: $accent;
+    background: lighten($accent, 20%);
   }
   
   .mobileNav a {
@@ -183,7 +184,7 @@ div.hero {
 h1 {
   margin-top: 0;
   font-size: 2rem;
-  text-shadow: 3px 3px $grey;
+  text-shadow: 2px 2px $grey;
 }
 
 h2 {
