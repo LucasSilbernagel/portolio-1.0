@@ -64,9 +64,12 @@
   display: inline;
 }
 
-.blog .mediumLink:hover {
+.blog .mediumLink:hover,
+.blog .mediumLink:focus,
+.blog .mediumLink:active {
   background: $white;
   border-bottom: 1px solid $black;
+  box-shadow: none;
 }
 
 .moreBlog,

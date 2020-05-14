@@ -39,7 +39,7 @@
       <div class="topBar">
 
       <!-- Logo -->
-      <div class="logo">
+      <div class="logo" tabindex="0">
         <img src="./styles/assets/logo.png" alt="Lucas Silbernagel logo" class="logoImage">
         <p class="toolTipText">You're a curious one! This logo is my initials in viking runes.</p>
       </div>
@@ -93,11 +93,7 @@
           <img class="profilePhoto" src="./styles/assets/profilePhoto.jpg" alt="Lucas Silbernagel">
         </div>
       </div>
-      
-      <!-- Button to scroll back to top of page -->
-      <a href="#header" class="up">
-        <i class="fas fa-arrow-circle-up"></i>
-      </a>
+
     </div>
 
   </header>
@@ -109,69 +105,69 @@
       <!-- About me -->
       <section class="about" id="about" data-aos="fade-up" data-aos-easing="ease-in-out">
         <h3>About</h3>
-        <p>Hi, I'm Lucas! As a recent graduate of Juno College, I’m an expert in front-end web development tools including React, jQuery, JavaScript (ES6), HTML5, CSS3, Firebase, SCSS, Git, APIs, and more.</p>
-        <p>Prior to attending Juno College, I earned a Master’s degree in sociocultural anthropology from the University of Toronto. Anthropology is the study of humanity, human behaviour, culture, and society in both the past and present. This dovetails perfectly with the goal of user experience (UX) design, which is to understand and learn from product users in order to improve the experience and ease of use for those users. I’m on a mission to build websites and applications that can be enjoyed on any modern device and by any user, one line of code at a time!</p>
-        <p>I also have considerable experience working in sales and customer service, where I honed skills such as client management, troubleshooting technical problems, content management systems, and training new teammates.</p>
-        <p>If you are interested in connecting with me, please get in touch!</p>
+        <p tabindex="0">Hi, I'm Lucas! As a recent graduate of Juno College, I’m an expert in front-end web development tools including React, jQuery, JavaScript (ES6), HTML5, CSS3, Firebase, SCSS, Git, APIs, and more.</p>
+        <p tabindex="0">Prior to attending Juno College, I earned a Master’s degree in sociocultural anthropology from the University of Toronto. Anthropology is the study of humanity, human behaviour, culture, and society in both the past and present. This dovetails perfectly with the goal of user experience (UX) design, which is to understand and learn from product users in order to improve the experience and ease of use for those users. I’m on a mission to build websites and applications that can be enjoyed on any modern device and by any user, one line of code at a time!</p>
+        <p tabindex="0">I also have considerable experience working in sales and customer service, where I honed skills such as client management, troubleshooting technical problems, content management systems, and training new teammates.</p>
+        <p tabindex="0">If you are interested in connecting with me, please get in touch!</p>
       </section>
 
       <!-- Skills -->
       <section class="skills" id="skills" data-aos="fade-up" data-aos-easing="ease-in-out">
         <h3>Skills</h3>
         <ul class="skillsContainer">
-          <li>
+          <li tabindex="0">
             <i class="devicon-html5-plain"></i>
             <h4>HTML5</h4>
           </li>
-          <li>
+          <li tabindex="0">
             <i class="devicon-css3-plain"></i>
             <h4>CSS3</h4>
           </li>
-          <li>
+          <li tabindex="0">
             <i class="devicon-javascript-plain"></i>
             <h4>JavaScript</h4>
           </li>
-          <li>
+          <li tabindex="0">
             <i class="devicon-react-original"></i>
             <h4>React</h4>
           </li>
-          <li>
+          <li tabindex="0">
             <i class="devicon-jquery-plain"></i>
             <h4>jQuery</h4>
           </li>
-          <li>
+          <li tabindex="0">
             <i class="devicon-sass-original"></i>
             <h4>SASS</h4>
           </li>
-          <li>
+          <li tabindex="0">
             <i class="fab fa-gripfire"></i>
             <h4>Firebase</h4>
           </li>
-          <li>
+          <li tabindex="0">
             <i class="devicon-git-plain"></i>
             <h4>Git</h4>
           </li>
-          <li>
+          <li tabindex="0">
             <i class="devicon-github-plain"></i>
             <h4>GitHub</h4>
           </li>
-          <li>
+          <li tabindex="0">
             <i class="devicon-visualstudio-plain"></i>
             <h4>VS Code</h4>
           </li>
-          <li>
+          <li tabindex="0">
             <i class="fas fa-universal-access"></i>
             <h4>Web Accessibility</h4>
           </li>
-          <li>
+          <li tabindex="0">
             <i class="fas fa-users"></i>
             <h4>Collaboration</h4>
           </li>
-          <li>
+          <li tabindex="0">
             <i class="fas fa-mobile-alt"></i>
             <h4>Responsive Design</h4>
           </li>
-          <li>
+          <li tabindex="0">
             <i class="fas fa-terminal"></i>
             <h4>Command Line</h4>
           </li>
@@ -271,7 +267,7 @@
 
       <!-- Blog -->
       <section class="blog" id="blog" data-aos="fade-up" data-aos-easing="ease-in-out">
-        <h3>Blog</h3>
+        <h3 tabindex="0">Blog</h3>
         <ul class="blogPosts">
 
           <!-- Blog post 1 -->
@@ -313,6 +309,7 @@
 
         <!-- Contact me form -->
           <form action="http://formspree.io/hello@lucassilbernagel.com" method="POST">
+            <legend class="sr-only">Enter your information below to send me a message.</legend>
               <label for="name" class="sr-only">Name</label>
               <input type="text" name="name" id="name" placeholder="Your name" required>
               <label for="email" class="sr-only">Email</label>
@@ -357,6 +354,11 @@
       </section>
       <p class="copyright">Lucas Silbernagel 2020</p>
     </div>
+
+    <!-- Button to scroll back to top of page -->
+    <a href="#header" class="up" aria-label="back to top of page">
+      <i class="fas fa-arrow-circle-up"></i>
+    </a>
   </footer>
 
   <!-- Import typed.js -->
