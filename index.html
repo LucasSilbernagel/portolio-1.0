@@ -23,6 +23,9 @@
   <!-- Import Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet"> 
 
+  <!-- animate-on-scroll styles -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Import stylesheet -->
   <link rel="stylesheet" href="./styles/style.css">
 
@@ -98,7 +101,7 @@
     <div class="wrapper">
 
       <!-- About me -->
-      <section class="about" id="about">
+      <section class="about" id="about" data-aos="fade-up" data-aos-easing="ease-in-out">
         <h3>About</h3>
         <p>Hi, I'm Lucas! As a recent graduate of Juno College, I’m an expert in front-end web development tools including React, jQuery, JavaScript (ES6), HTML5, CSS3, Firebase, SCSS, Git, APIs, and more.</p>
         <p>Prior to attending Juno College, I earned a Master’s degree in sociocultural anthropology from the University of Toronto. Anthropology is the study of humanity, human behaviour, culture, and society in both the past and present. This dovetails perfectly with the goal of user experience (UX) design, which is to understand and learn from product users in order to improve the experience and ease of use for those users. I’m on a mission to build websites and applications that can be enjoyed on any modern device and by any user, one line of code at a time!</p>
@@ -107,7 +110,7 @@
       </section>
 
       <!-- Skills -->
-      <section class="skills" id="skills">
+      <section class="skills" id="skills" data-aos="fade-up" data-aos-easing="ease-in-out">
         <h3>Skills</h3>
         <ul class="skillsContainer">
           <li>
@@ -170,10 +173,10 @@
       </section>
 
       <!-- My projects -->
-      <section class="projects" id="projects">
+      <section class="projects" id="projects" data-aos="fade-up" data-aos-easing="ease-in-out">
         <h3>Projects</h3>
         <ul class="projectContainer">
-          <li>
+          <li data-aos="fade-up" data-aos-easing="ease-in-out">
             <div class="projectImage">
               <img src="./styles/assets/battleRockets.png" alt="Battle Rockets game">
             </div>
@@ -185,7 +188,7 @@
               <a class="projectLink" href="https://rocketbattle.github.io/battleRockets/" target="_blank" rel="noopener noreferrer">View Live</a>
             </div>
           </li>
-          <li>
+          <li data-aos="fade-up" data-aos-easing="ease-in-out">
             <div class="projectImage">
               <img src="./styles/assets/myUser.png" alt="MyUser, a user persona generator">
             </div>
@@ -197,7 +200,7 @@
               <a class="projectLink" href="https://lucassilbernagel.github.io/my-user/" target="_blank" rel="noopener noreferrer">View Live</a>
             </div>
           </li>
-          <li>
+          <li data-aos="fade-up" data-aos-easing="ease-in-out">
             <div class="projectImage">
               <img src="./styles/assets/triviaQuest.png" alt="Trivia Quest, a trivia game based on Trivial Pursuit">
             </div>
@@ -209,7 +212,7 @@
               <a class="projectLink" href="https://heatherandlucas.github.io/triviaQuest/" target="_blank" rel="noopener noreferrer">View Live</a>
             </div>
           </li>
-          <li>
+          <li data-aos="fade-up" data-aos-easing="ease-in-out">
             <div class="projectImage">
               <img src="./styles/assets/speedyClick.png" alt="Speedy Click, a simple click counter game">
             </div>
@@ -221,7 +224,7 @@
               <a class="projectLink" href="https://lucassilbernagel.github.io/speedyClick/" target="_blank" rel="noopener noreferrer">View Live</a>
             </div>
           </li>
-          <li>
+          <li data-aos="fade-up" data-aos-easing="ease-in-out">
             <div class="projectImage">
               <img src="./styles/assets/sunshine.png" alt="Sunshine, a multi-page travel website">
             </div>
@@ -233,7 +236,7 @@
               <a class="projectLink" href="https://lucassilbernagel.github.io/sunshine/" target="_blank" rel="noopener noreferrer">View Live</a>
             </div>
           </li>
-          <li>
+          <li data-aos="fade-up" data-aos-easing="ease-in-out">
             <div class="projectImage">
               <img src="./styles/assets/bikerland.png" alt="Bikerland, a single-page website">
             </div>
@@ -249,10 +252,10 @@
       </section>
 
       <!-- Blog -->
-      <section class="blog" id="blog">
+      <section class="blog" id="blog" data-aos="fade-up" data-aos-easing="ease-in-out">
         <h3>Blog</h3>
         <ul class="blogPosts">
-          <li>
+          <li data-aos="fade-up" data-aos-easing="ease-in-out">
             <img src="./styles/assets/anthro.jpg" alt="printed anthropology text">
             <!-- Image from americananthro.org -->
             <h4>I’m a web developer now?! From decoding human behaviour to building the modern internet.</h4>
@@ -261,7 +264,7 @@
             <p>I moved to Toronto in 2014 to pursue a Master of Arts degree in sociocultural anthropology at U of T. I planned to later pursue a PhD and become a professor of anthropology, but even as I boarded the plane to Toronto I had serious doubts about that career path.</p>
             <a class="blogLink" href="https://medium.com/@LucasCodePro/im-a-web-developer-now-from-decoding-human-behaviour-to-building-the-modern-internet-b7c36a34dfd9" target="_blank" rel="noopener noreferrer">Read More</a>
           </li>
-          <li>
+          <li data-aos="fade-up" data-aos-easing="ease-in-out">
             <img src="./styles/assets/braille.jpeg" alt="Person using a braille writer.">
             <!-- Photo by Sigmund on Unsplash -->
             <h4>The Blind Leading the Sighted: Prioritizing Accessibility on the Modern Web</h4>
@@ -281,7 +284,7 @@
     <div class="wrapper">
 
       <!-- Contact information -->
-      <section class="contact" id="contact">
+      <section class="contact" id="contact" data-aos="fade-up" data-aos-easing="ease-in-out">
         <h3>Contact</h3>
         <h4>hello@lucassilbernagel.com</h4>
           <form action="http://formspree.io/hello@lucassilbernagel.com" method="POST">
@@ -324,6 +327,13 @@
 
   <!-- Import smooth scroll for anchor tags -->
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+  <!-- Import animate-on-scroll -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Initialize animate-on-scroll -->
+  <script>
+    AOS.init();
+  </script>
 
   <!-- Import JavaScript file -->
   <script src="script.js"></script> 
