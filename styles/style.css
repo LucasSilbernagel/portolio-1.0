@@ -570,6 +570,7 @@ h2 {
   font-size: 3rem;
   color: #EE4D45;
   visibility: hidden;
+  opacity: 50%;
 }
 
 .up:hover,
