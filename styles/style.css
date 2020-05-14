@@ -583,6 +583,8 @@ h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 320px;
 }
 
 .skills li {
@@ -768,8 +770,7 @@ footer .contact h4 {
   color: #EE4D45;
 }
 
-fieldset {
-  border: none;
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -844,6 +845,12 @@ footer button:active {
 .copyright {
   text-align: center;
   color: #BABABA;
+}
+
+@media (min-width: 550px) {
+  .skillsContainer {
+    max-width: none;
+  }
 }
 
 @media (min-width: 760px) {
