@@ -1,3 +1,9 @@
+@media (min-width: 550px) {
+  .skillsContainer {
+    max-width: none;
+  }
+}
+
 @media (min-width: 760px) {
   input {
     max-width: calc(50% - 10px);
