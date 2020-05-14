@@ -1,5 +1,6 @@
 body {
   font-family: $bodyText;
+  cursor: default;
 }
 
 body,
@@ -63,6 +64,7 @@ h3 {
   position: relative;
 }
 
+// Orange underline on section headers
 h3:after {
   content: ""; 
   display: block; 
