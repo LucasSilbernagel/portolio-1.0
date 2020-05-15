@@ -1,3 +1,12 @@
+// Toggle mobile menu open/closed
+$('.hamburgerToggle').on('click', function () {
+  $('.hamburgerToggle').attr('checked', true);
+});
+
+$( '.mobileNav a' ).on("click", function(){
+  $('.hamburgerToggle').prop('checked', false);
+});
+
 // Smooth scroll
 const scroll = new SmoothScroll('a[href*="#"]');
 
