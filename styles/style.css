@@ -484,7 +484,7 @@ div.hero {
 
 .hamburgerToggle:checked + label .line1,
 .hamburgerToggle:checked + label .line3 {
-  opacity: 0%;
+  visibility: hidden;
 }
 
 .hamburgerToggle:checked + label .line1 {
