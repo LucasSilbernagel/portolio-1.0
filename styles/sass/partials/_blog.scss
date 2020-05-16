@@ -18,6 +18,17 @@
   border-radius: 10px 10px 0 0;
 }
 
+.blogText {
+  padding: 10px;
+}
+
+.blogPosts h4,
+.blogPosts h5 {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  text-align: left;
+}
+
 .blogPosts h5 {
   color: $grey;
 }
