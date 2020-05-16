@@ -63,9 +63,9 @@ div.hero {
     align-items: flex-start;
   }
   
-  .hamburgerToggle {
-    visibility: hidden;
-  }
+  // .hamburgerToggle {
+  //   visibility: hidden;
+  // }
   
   .mobileNav {
     visibility: hidden;
@@ -99,11 +99,11 @@ div.hero {
     color: $black;
   }
   
-  #hamburgerToggle:checked ~ .mobileNav {
+  .open {
     right: 0px;
     visibility: visible;
   }
-  
+
   .hamburgerLines {
     display: block;
     width: 40px;
@@ -111,7 +111,6 @@ div.hero {
     position: fixed;
     right: 20px;
     top: 20px;
-    transition: all 0.4s ease-in-out;
   }
   
   .hamburgerLines:hover {
@@ -124,7 +123,6 @@ div.hero {
     position: absolute;
     left: 0;
     background: $black;
-    transition: all 0.4s ease-in-out;
   }
   
   .hamburgerLine.line1 {
@@ -132,9 +130,8 @@ div.hero {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }
-  
-  .hamburgerLine.line2,
-  .hamburgerLine.line2b {
+
+  .hamburgerLine.line2 {
     top: 50%;
     border-radius: 8px;
     background: $black;
@@ -145,33 +142,6 @@ div.hero {
     bottom: 0px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-  }
-  
-  .hamburgerToggle:checked + label .line1,
-  .hamburgerToggle:checked + label .line3 {
-    visibility: hidden;
-  }
-  
-  .hamburgerToggle:checked + label .line1 {
-    top: -6px;
-  }
-  
-  .hamburgerToggle:checked + label .line3 {
-    bottom: -6px;
-  }
-  
-  .hamburgerToggle:checked + label .middle {
-    height: 4px;
-    background: $black;
-  }
-  
-  .hamburgerToggle:checked + label .line2 {
-    transform: rotate(40deg);
-    background: $black;
-  }
-  
-  .hamburgerToggle:checked + label .line2b {
-    transform: rotate(-40deg);
   }
 
 .hero {
