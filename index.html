@@ -59,15 +59,13 @@
 
       <!-- Mobile Navigation -->
       <div class="hamburger">
-        <input type="checkbox" id="hamburgerToggle" name="hamburgerToggle" class="hamburgerToggle">
-        <label for="hamburgerToggle">
-            <div class="hamburgerLines">
-                <div class="hamburgerLine line1"></div>
-                <div class="hamburgerLine line2"></div>
-                <div class="hamburgerLine line2b middle"></div>
-                <div class="hamburgerLine line3"></div>
-            </div>
-        </label>
+        <div class="hamburgerToggle">
+          <div class="hamburgerLines">
+              <div class="hamburgerLine line1"></div>
+              <div class="hamburgerLine line2"></div>
+              <div class="hamburgerLine line3"></div>
+          </div>
+        </div>
         <ul class="mobileNav">
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -308,15 +306,14 @@
         <h4>hello@lucassilbernagel.com</h4>
 
         <!-- Contact me form -->
-          <form action="http://formspree.io/hello@lucassilbernagel.com" method="POST">
-            <legend class="sr-only">Enter your information below to send me a message.</legend>
-              <label for="name" class="sr-only">Name</label>
-              <input type="text" name="name" id="name" placeholder="Your name" required>
-              <label for="email" class="sr-only">Email</label>
-              <input type="email" name="email" id="email" placeholder="Your email" required>
-              <label for="message" class="sr-only">Message</label>
-              <textarea name="message" id="message" placeholder="Your message" required class="message"></textarea>
-              <button type="submit" class="submit" name="submit">Send</button>
+          <form action="http://formspree.io/hello@lucassilbernagel.com" method="POST" aria-label="Enter your information below to send me a message">
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+            <label for="message" class="sr-only">Message</label>
+            <textarea name="message" id="message" placeholder="Your message" required class="message"></textarea>
+            <button type="submit" class="submit" name="submit">Send</button>
           </form>
 
           <!-- Social media icons -->

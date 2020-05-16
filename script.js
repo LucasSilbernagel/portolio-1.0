@@ -1,20 +1,21 @@
-// On click, open mobile menu
+// On click, toggle mobile menu
 $('.hamburgerToggle').on('click', function () {
-  $('.hamburgerToggle').attr('checked', true);
+  $('.mobileNav').toggleClass('open');
 });
 
 // When link is clicked in mobile menu, close the menu
 $( '.mobileNav a' ).on("click", function(){
-  $('.hamburgerToggle').prop('checked', false);
+  $('.mobileNav').toggleClass('open');
 });
 
 // If screen is clicked outside the mobile menu, close the menu
-$(document).mouseup(function(e){
-  const menu = $('.mobileNav');
-  if (!menu.is(e.target) // The target of the click isn't the container.
-  && menu.has(e.target).length === 0) // Nor a child element of the container
-  {
-    $('.hamburgerToggle').prop('checked', false);
+$(document).on("click", function(e){
+  if( 
+    $(e.target).closest(".mobileNav").length == 0 &&
+    $(".mobileNav").hasClass("open") &&
+    $(e.target).closest(".hamburgerToggle").length == 0
+  ){
+    $('.mobileNav').toggleClass('open');
   }
 });
 
