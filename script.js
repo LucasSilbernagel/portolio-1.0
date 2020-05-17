@@ -1,21 +1,24 @@
-// On click, toggle mobile menu
-$('.hamburgerToggle').on('click', function () {
-  $('.mobileNav').toggleClass('open');
+// // On click, toggle mobile menu
+$('#navIcon').click(function () {
+  $(this).toggleClass('open');
+  $('.mobileNav').toggleClass('openNav');
 });
 
-// When link is clicked in mobile menu, close the menu
+// // When link is clicked in mobile menu, close the menu
 $( '.mobileNav a' ).on("click", function(){
-  $('.mobileNav').toggleClass('open');
+  $('.mobileNav').toggleClass('openNav');
+  $('#navIcon').toggleClass('open');
 });
 
-// If screen is clicked outside the mobile menu, close the menu
+// // If screen is clicked outside the mobile menu, close the menu
 $(document).on("click", function(e){
   if( 
     $(e.target).closest(".mobileNav").length == 0 &&
-    $(".mobileNav").hasClass("open") &&
-    $(e.target).closest(".hamburgerToggle").length == 0
+    $(".mobileNav").hasClass("openNav") &&
+    $(e.target).closest("#navIcon").length == 0
   ){
-    $('.mobileNav').toggleClass('open');
+    $('.mobileNav').toggleClass('openNav');
+    $('#navIcon').toggleClass('open');
   }
 });
 
