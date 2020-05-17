@@ -70,7 +70,7 @@ div.hero {
     padding-left: 0;
     z-index: 20;
     width: 100%;
-    top: 25px;
+    top: 50px;
     right: -500px;
     transition: all 0.4s ease-in;
     font-size: 2rem;
@@ -95,49 +95,83 @@ div.hero {
     color: $black;
   }
   
-  .open {
+  .openNav {
     right: 0px;
     visibility: visible;
   }
 
-  .hamburgerLines {
-    display: block;
-    width: 40px;
-    height: 30px;
+  #navIcon {
+    width: 60px;
+    height: 45px;
     position: fixed;
-    right: 20px;
-    top: 20px;
-  }
-  
-  .hamburgerLines:hover {
+    right: 30px;
+    top: 30px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
     cursor: pointer;
   }
   
-  .hamburgerLine {
-    width: 100%;
-    height: 5px;
+  #navIcon span {
+    display: block;
     position: absolute;
-    left: 0;
+    height: 9px;
+    width: 100%;
     background: $black;
-  }
-  
-  .hamburgerLine.line1 {
-    top: 0px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-radius: 9px;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
   }
 
-  .hamburgerLine.line2 {
-    top: 50%;
-    border-radius: 8px;
-    background: $black;
-    transform: translateY(-50%);
+  #navIcon span:nth-child(1) {
+    top: 0px;
   }
   
-  .hamburgerLine.line3 {
-    bottom: 0px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+  #navIcon span:nth-child(2), 
+  #navIcon span:nth-child(3) {
+    top: 18px;
+  }
+  
+  #navIcon span:nth-child(4) {
+    top: 36px;
+  }
+  
+  #navIcon.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  #navIcon.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  #navIcon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  #navIcon.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
   }
 
 .hero {
