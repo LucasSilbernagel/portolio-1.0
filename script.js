@@ -64,7 +64,7 @@ $(function () {
 
   // // typed.js
   const typed = new Typed('#former', {
-    strings: ["Former Anthropologist", "Guitar Novice", "Trivia Whiz", "Film Fanatic", "History Nerd", "Information Sponge"],
+    strings: ["Former Anthropologist", "Amateur Guitarist", "Trivia Whiz", "Film Fanatic", "History Nerd", "Information Sponge"],
     typeSpeed: 70,
     backSpeed: 20,
     backDelay: 2000,
