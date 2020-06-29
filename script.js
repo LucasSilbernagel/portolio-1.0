@@ -1,44 +1,57 @@
-// Document ready
-$(function () {
+const navIcon = document.getElementById('navIcon');
+const mobileNav = document.getElementById('mobileNav');
 
+// Mobile menu functionality
+function hamburgerMenu() {
   // // On click, toggle mobile menu
-  $('#navIcon').click(function () {
-    $(this).toggleClass('open');
-    $('.mobileNav').toggleClass('openNav');
+  navIcon.addEventListener('click', function () {
+    this.classList.toggle('open');
+    mobileNav.classList.toggle('openNav')
   });
 
   // // When link is clicked in mobile menu, close the menu
-  $( '.mobileNav a' ).on("click", function(){
-    $('.mobileNav').toggleClass('openNav');
-    $('#navIcon').toggleClass('open');
+  document.addEventListener('click', function () {
+    if (event.target.classList.contains('mobileA')) {
+      mobileNav.classList.toggle('openNav');
+      navIcon.classList.toggle('open');
+    }
   });
 
   // // If screen is clicked outside the mobile menu, close the menu
-  $(document).on("click", function(e){
-    if( 
-      $(e.target).closest(".mobileNav").length == 0 &&
-      $(".mobileNav").hasClass("openNav") &&
-      $(e.target).closest("#navIcon").length == 0
-    ){
-      $('.mobileNav').toggleClass('openNav');
-      $('#navIcon').toggleClass('open');
+  document.addEventListener('click', function (event) {
+    const hamburger = document.getElementById('hamburger');
+    const isClickInside = hamburger.contains(event.target);
+    if (!isClickInside) {
+      mobileNav.classList.toggle('openNav');
+      navIcon.classList.toggle('open');
     }
   });
+}
 
+// Back to top button
+function backToTop() {
+  const up = document.getElementById('up');
   // Hide back to top button by default
-  $('#up').hide();
+  up.style.opacity = "0%";
   // Display back to top button on scroll
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 300) { // 300px from top
-      $('#up').fadeIn();
+  window.onscroll = function () {
+    const currentScrollPos = window.pageYOffset;
+    if (currentScrollPos > 300) { // 300px from top
+      up.style.opacity = "50%";
     } else {
-      $('#up').fadeOut();
+      up.style.opacity = "0%";
     }
-  });
+  };
+}
 
+// Smooth scroll
+function smoothScroll() {
   // Smooth scroll
   const scroll = new SmoothScroll('a[href*="#"]');
+}
 
+// Animate page elements on scroll
+function animateOnScroll() {
   // animate-on-scroll
   AOS.init({
     // Global settings:
@@ -51,7 +64,6 @@ $(function () {
     debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
     throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
     
-
     // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
     offset: 120, // offset (in px) from the original trigger point
     delay: 0, // values from 0 to 3000, with step 50ms
@@ -61,7 +73,10 @@ $(function () {
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   });
+}
 
+// Typed JS functionality for title at top of page
+function typed() {
   // // typed.js
   const typed = new Typed('#former', {
     strings: ["Former Anthropologist", "Amateur Guitarist", "Trivia Whiz", "Film Fanatic", "History Nerd", "Information Sponge"],
@@ -72,6 +87,14 @@ $(function () {
     loopCount: Infinity,
     showCursor: false
   });
+}
 
-});
-
+// Document ready
+function documentReady(func) {
+  document.addEventListener('DOMContentLoaded', func);
+}
+documentReady(hamburgerMenu);
+documentReady(backToTop);
+documentReady(smoothScroll);
+documentReady(animateOnScroll);
+documentReady(typed);

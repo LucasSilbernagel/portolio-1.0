@@ -232,12 +232,13 @@ h2 {
 
 .up {
   position: fixed;
+  visibility: hidden;
   right: 50px;
   top: 520px;
   font-size: 3rem;
   color: $accent;
-  visibility: hidden;
-  opacity: 50%;
+  opacity: 0%;
+  transition: 0.3s ease-in-out;
 }
 
 .up:hover,
