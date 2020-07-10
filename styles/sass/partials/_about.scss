@@ -1,4 +1,15 @@
-.about p {
-  margin: 0 auto;
-  max-width: 650px;
+.about {
+  p,
+  li {
+    margin: 0 auto;
+    max-width: 650px;
+  }
+  ul {
+    padding-left: 20px;
+    li {
+      list-style: disc;
+      font-size: 1.2rem;
+      line-height: 1.7;
+    }
+  }
 }
