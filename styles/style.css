@@ -249,6 +249,10 @@ a {
   text-decoration: none;
 }
 
+.fa-external-link-alt {
+  color: #2B2B2B;
+}
+
 .wrapper {
   margin: 0 auto;
   padding: 10px;
