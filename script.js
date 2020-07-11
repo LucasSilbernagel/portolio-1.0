@@ -1,8 +1,11 @@
-const navIcon = document.getElementById('navIcon');
-const mobileNav = document.getElementById('mobileNav');
+// Namespace
+const portfolio = {}
+
+portfolio.navIcon = document.getElementById('navIcon');
+portfolio.mobileNav = document.getElementById('mobileNav');
 
 // Mobile menu functionality
-function hamburgerMenu() {
+portfolio.hamburgerMenu = function () {
   // // On click, toggle mobile menu
   navIcon.addEventListener('click', function () {
     this.classList.toggle('open');
@@ -22,14 +25,14 @@ function hamburgerMenu() {
     const hamburger = document.getElementById('hamburger');
     const isClickInside = hamburger.contains(event.target);
     if (!isClickInside) {
-      mobileNav.classList.toggle('openNav');
-      navIcon.classList.toggle('open');
+      mobileNav.classList.remove('openNav');
+      navIcon.classList.remove('open');
     }
   });
 }
 
 // Back to top button
-function backToTop() {
+portfolio.backToTop = function () {
   const up = document.getElementById('up');
   // Hide back to top button by default
   up.style.opacity = "0%";
@@ -45,13 +48,13 @@ function backToTop() {
 }
 
 // Smooth scroll
-function smoothScroll() {
+portfolio.smoothScroll = function () {
   // Smooth scroll
   const scroll = new SmoothScroll('a[href*="#"]');
 }
 
 // Animate page elements on scroll
-function animateOnScroll() {
+portfolio.animateOnScroll = function () {
   // animate-on-scroll
   AOS.init({
     // Global settings:
@@ -76,7 +79,7 @@ function animateOnScroll() {
 }
 
 // Typed JS functionality for title at top of page
-function typed() {
+portfolio.typed = function () {
   // // typed.js
   const typed = new Typed('#former', {
     strings: ["Former Anthropologist", "Amateur Guitarist", "Trivia Whiz", "Film Fanatic", "History Nerd", "Information Sponge"],
@@ -89,12 +92,14 @@ function typed() {
   });
 }
 
-// Document ready
-function documentReady(func) {
-  document.addEventListener('DOMContentLoaded', func);
+// Initialize app
+portfolio.init = function () {
+  portfolio.hamburgerMenu();
+  portfolio.backToTop();
+  portfolio.smoothScroll();
+  portfolio.animateOnScroll();
+  portfolio.typed();
 }
-documentReady(hamburgerMenu);
-documentReady(backToTop);
-documentReady(smoothScroll);
-documentReady(animateOnScroll);
-documentReady(typed);
+
+// Document ready
+document.addEventListener('DOMContentLoaded', portfolio.init);
