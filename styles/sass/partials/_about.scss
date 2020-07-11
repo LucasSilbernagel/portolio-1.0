@@ -4,6 +4,9 @@
     margin: 0 auto;
     max-width: 650px;
   }
+  p {
+    margin-bottom: 10px;
+  }
   ul {
     padding-left: 20px;
     li {
@@ -11,5 +14,15 @@
       font-size: 1.2rem;
       line-height: 1.7;
     }
+  }
+  .getInTouch {
+    border-bottom: 1px solid $black;
+    color: $black;
+  }
+  
+  .getInTouch:hover,
+  .getInTouch:focus,
+  .getInTouch:active {
+    color: $accent;
   }
 }
