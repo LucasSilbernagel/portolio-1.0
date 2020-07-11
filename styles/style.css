@@ -249,6 +249,10 @@ a {
   text-decoration: none;
 }
 
+.fa-external-link-alt {
+  color: #2B2B2B;
+}
+
 .wrapper {
   margin: 0 auto;
   padding: 10px;
@@ -374,11 +378,6 @@ header {
 
 div.hero {
   margin-top: 10px;
-}
-
-.hire {
-  color: #FFFFFF;
-  background: #EE4D45;
 }
 
 .hamburger {
@@ -585,14 +584,29 @@ h2 {
 }
 
 .about .getInTouch {
-  border-bottom: 1px solid #2B2B2B;
-  color: #2B2B2B;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  -webkit-box-shadow: #2B2B2B 5px 10px;
+          box-shadow: #2B2B2B 5px 10px;
+  text-transform: uppercase;
+  background: #EE4D45;
+  color: #FFFFFF;
+  padding: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+  min-width: 157px;
+  display: inline-block;
 }
 
 .about .getInTouch:hover,
-.about .getInTouch:focus,
+.about .getInTouch:focus {
+  background: #ea2016;
+}
+
 .about .getInTouch:active {
-  color: #EE4D45;
+  background: #ea2016;
+  -webkit-box-shadow: #2B2B2B 2px 5px;
+          box-shadow: #2B2B2B 2px 5px;
 }
 
 .skillsContainer {
