@@ -18,6 +18,13 @@
   margin-bottom: 0;
 }
 
+.collaborationLink {
+  text-decoration: underline;
+}
+.collaborationLink:hover {
+  text-decoration: underline $accent;
+}
+
 .used {
   text-align: center;
 }

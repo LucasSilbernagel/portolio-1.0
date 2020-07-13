@@ -659,6 +659,15 @@ h2 {
   margin-bottom: 0;
 }
 
+.collaborationLink {
+  text-decoration: underline;
+}
+
+.collaborationLink:hover {
+  -webkit-text-decoration: underline #EE4D45;
+          text-decoration: underline #EE4D45;
+}
+
 .used {
   text-align: center;
 }
