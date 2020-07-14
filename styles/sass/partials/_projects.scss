@@ -21,7 +21,8 @@
 .collaborationLink {
   text-decoration: underline;
 }
-.collaborationLink:hover {
+.collaborationLink:hover,
+.collaborationLink:focus {
   text-decoration: underline $accent;
 }
 
