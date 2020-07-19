@@ -583,32 +583,6 @@ h2 {
   line-height: 1.7;
 }
 
-.about .getInTouch {
-  font-size: 1.2rem;
-  border-radius: 5px;
-  -webkit-box-shadow: #2B2B2B 5px 10px;
-          box-shadow: #2B2B2B 5px 10px;
-  text-transform: uppercase;
-  background: #EE4D45;
-  color: #FFFFFF;
-  padding: 10px;
-  margin-left: 5px;
-  margin-top: 5px;
-  min-width: 157px;
-  display: inline-block;
-}
-
-.about .getInTouch:hover,
-.about .getInTouch:focus {
-  background: #ea2016;
-}
-
-.about .getInTouch:active {
-  background: #ea2016;
-  -webkit-box-shadow: #2B2B2B 2px 5px;
-          box-shadow: #2B2B2B 2px 5px;
-}
-
 .skillsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
