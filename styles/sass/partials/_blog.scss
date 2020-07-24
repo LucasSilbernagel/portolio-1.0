@@ -1,7 +1,6 @@
-.blogPosts {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.blog h3 {
+  width: auto;
+  max-width: 350px;
 }
 
 .blogPosts li {
@@ -10,12 +9,7 @@
   margin-bottom: 30px;
   padding-bottom: 40px;
   text-align: center;
-  max-width: 450px;
   border-radius: 10px;
-}
-
-.blogPosts img {
-  border-radius: 10px 10px 0 0;
 }
 
 .blogText {
@@ -23,10 +17,23 @@
 }
 
 .blogPosts h4,
+.blogPosts h5,
+.blogPosts p,
+.blogImageContainer {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.blogPosts h4,
 .blogPosts h5 {
   font-size: 1.2rem;
   line-height: 1.7;
   text-align: left;
+}
+
+.blogPosts h4 {
+  text-decoration: underline;
+  font-size: 1.5rem;
 }
 
 .blogPosts h5 {
@@ -49,7 +56,7 @@
   text-transform: uppercase;
   background: $accent;
   color: $white;
-  width: 150px;
+  max-width: 450px;
   display: block;
   margin: 0 auto;
 }
