@@ -686,15 +686,9 @@ span {
           box-shadow: #2B2B2B 2px 5px;
 }
 
-.blogPosts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.blog h3 {
+  width: auto;
+  max-width: 350px;
 }
 
 .blogPosts li {
@@ -703,12 +697,7 @@ span {
   margin-bottom: 30px;
   padding-bottom: 40px;
   text-align: center;
-  max-width: 450px;
   border-radius: 10px;
-}
-
-.blogPosts img {
-  border-radius: 10px 10px 0 0;
 }
 
 .blogText {
@@ -716,10 +705,23 @@ span {
 }
 
 .blogPosts h4,
+.blogPosts h5,
+.blogPosts p,
+.blogImageContainer {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.blogPosts h4,
 .blogPosts h5 {
   font-size: 1.2rem;
   line-height: 1.7;
   text-align: left;
+}
+
+.blogPosts h4 {
+  text-decoration: underline;
+  font-size: 1.5rem;
 }
 
 .blogPosts h5 {
@@ -743,7 +745,7 @@ span {
   text-transform: uppercase;
   background: #EE4D45;
   color: #FFFFFF;
-  width: 150px;
+  max-width: 450px;
   display: block;
   margin: 0 auto;
 }
