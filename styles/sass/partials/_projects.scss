@@ -36,7 +36,9 @@ span {
 
 .projectLinkContainer {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  width: 180px;
+  margin: 0 auto;
 }
 
 .projectLink {
@@ -50,6 +52,7 @@ span {
   text-transform: uppercase;
   background: $accent;
   color: $white;
+  margin-bottom: 20px;
 }
 
 .projectLink:hover,

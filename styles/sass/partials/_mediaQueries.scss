@@ -1,3 +1,16 @@
+@media (min-width: 360px) {
+  .projectLinkContainer {
+    flex-direction: row;
+    width: unset;
+    margin: unset;
+    justify-content: space-evenly;
+  }
+
+  .projectLink {
+    margin-bottom: unset;
+  }
+}
+
 @media (min-width: 550px) {
   .about ul {
     padding-left: 100px;
