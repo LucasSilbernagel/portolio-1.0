@@ -84,9 +84,8 @@ div.hero {
   }
   
   .mobileNav a {
+    display: block;
     width: 100%;
-    padding-left: 110px;
-    padding-right: 110px;
     color: $black;
   }
   
