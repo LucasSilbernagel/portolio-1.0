@@ -12,6 +12,11 @@
 }
 
 @media (min-width: 550px) {
+  p {
+    line-height: 1.7;
+    padding: 0;
+  }
+
   .about ul {
     padding-left: 100px;
   }

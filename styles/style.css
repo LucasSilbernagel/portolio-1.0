@@ -320,11 +320,13 @@ h3:after {
 
 p {
   font-size: 1.2rem;
-  line-height: 1.7;
+  line-height: 1.2;
+  padding: 0px 10px;
 }
 
 header {
   background: #F5F4F2;
+  padding-bottom: 50px;
 }
 
 .logo {
@@ -623,6 +625,7 @@ h2 {
   margin: 0 auto;
   margin-bottom: 60px;
   max-width: 450px;
+  padding: 10px;
 }
 
 .projects h4 {
@@ -692,12 +695,14 @@ span {
 .blog h3 {
   width: auto;
   max-width: 350px;
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
 
 .blogPosts li {
   background: #F5F4F2;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   padding-bottom: 40px;
   text-align: center;
   border-radius: 10px;
@@ -723,12 +728,12 @@ span {
 }
 
 .blogPosts h4 {
-  text-decoration: underline;
   font-size: 1.5rem;
 }
 
 .blogPosts h5 {
-  color: #BABABA;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .blogPosts p {
@@ -895,6 +900,10 @@ footer button:active {
 }
 
 @media (min-width: 550px) {
+  p {
+    line-height: 1.7;
+    padding: 0;
+  }
   .about ul {
     padding-left: 100px;
   }
