@@ -1,12 +1,14 @@
 .blog h3 {
   width: auto;
   max-width: 350px;
+  margin-bottom: 100px;
+  margin-top: 50px
 }
 
 .blogPosts li {
   background: $sectionBackground;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   padding-bottom: 40px;
   text-align: center;
   border-radius: 10px;
@@ -32,12 +34,12 @@
 }
 
 .blogPosts h4 {
-  text-decoration: underline;
   font-size: 1.5rem;
 }
 
 .blogPosts h5 {
-  color: $grey;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 .blogPosts p {
