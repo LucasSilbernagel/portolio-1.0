@@ -649,8 +649,17 @@ h2 {
   text-align: center;
 }
 
-span {
-  color: #EE4D45;
+.used li {
+  margin: unset;
+  max-width: unset;
+  padding: unset;
+  font-size: 1.2rem;
+  background: #2B2B2B;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-right: 5px;
 }
 
 .projectLinkContainer {
@@ -663,6 +672,7 @@ span {
           flex-direction: column;
   width: 180px;
   margin: 0 auto;
+  padding-top: 10px;
 }
 
 .projectLink {
@@ -729,6 +739,10 @@ span {
 
 .blogPosts h4 {
   font-size: 1.5rem;
+  color: #FFFFFF;
+  background: #2B2B2B;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .blogPosts h5 {
