@@ -29,10 +29,18 @@
 
 .used {
   text-align: center;
-}
-
-span {
-  color: $accent;
+  li {
+    margin: unset;
+    max-width: unset;
+    padding: unset;
+    font-size: 1.2rem;
+    background: $black;
+    color: $white;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
 }
 
 .projectLinkContainer {
@@ -40,6 +48,7 @@ span {
   flex-direction: column;
   width: 180px;
   margin: 0 auto;
+  padding-top: 10px;
 }
 
 .projectLink {
