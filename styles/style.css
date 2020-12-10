@@ -374,7 +374,8 @@ header {
   border-bottom: 1px solid #F5F4F2;
 }
 
-.mainNav li:hover {
+.mainNav li:hover,
+.mainNav li a:focus {
   border-bottom: 1px solid #2B2B2B;
 }
 
