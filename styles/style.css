@@ -408,18 +408,17 @@ div.hero {
 .mobileNav li {
   padding-bottom: 10px;
   padding-top: 10px;
-  background: #F5F4F2;
+  background: #EE4D45;
 }
 
-.mobileNav li:hover,
-.mobileNav li:focus {
-  background: #f7a6a2;
+.mobileNav li:active {
+  background: black;
 }
 
 .mobileNav a {
   display: block;
   width: 100%;
-  color: #2B2B2B;
+  color: #FFFFFF;
 }
 
 .openNav {
