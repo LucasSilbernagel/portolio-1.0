@@ -9,6 +9,10 @@
   .projectLink {
     margin-bottom: unset;
   }
+
+  form {
+    max-width: 90%;
+  }
 }
 
 @media (min-width: 550px) {
@@ -36,9 +40,17 @@
   .skillsContainer {
     max-width: none;
   }
+
+  form {
+    max-width: 80%;
+  }
 }
 
 @media (min-width: 760px) {
+  form {
+    max-width: 700px;
+  }
+
   input {
     max-width: calc(50% - 10px);
   }
