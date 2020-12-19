@@ -374,8 +374,7 @@ header {
   border-bottom: 1px solid #F5F4F2;
 }
 
-.mainNav li:hover,
-.mainNav li a:focus {
+.mainNav li:hover {
   border-bottom: 1px solid #2B2B2B;
 }
 
@@ -409,18 +408,17 @@ div.hero {
 .mobileNav li {
   padding-bottom: 10px;
   padding-top: 10px;
-  background: #F5F4F2;
+  background: #EE4D45;
 }
 
-.mobileNav li:hover,
-.mobileNav li:focus {
-  background: #f7a6a2;
+.mobileNav li:active {
+  background: black;
 }
 
 .mobileNav a {
   display: block;
   width: 100%;
-  color: #2B2B2B;
+  color: #FFFFFF;
 }
 
 .openNav {
@@ -826,13 +824,17 @@ form {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1.2rem;
+  margin: 0 auto;
 }
 
 input,
 textarea {
-  margin-bottom: 10px;
-  padding: 5px;
+  margin-bottom: 12px;
+  padding: 10px 5px;
   width: 100%;
+  border: none;
+  -webkit-box-shadow: 2px 4px #BABABA;
+          box-shadow: 2px 4px #BABABA;
 }
 
 textarea {
@@ -908,6 +910,9 @@ footer button:active {
   .projectLink {
     margin-bottom: unset;
   }
+  form {
+    max-width: 90%;
+  }
 }
 
 @media (min-width: 550px) {
@@ -930,9 +935,15 @@ footer button:active {
   .skillsContainer {
     max-width: none;
   }
+  form {
+    max-width: 80%;
+  }
 }
 
 @media (min-width: 760px) {
+  form {
+    max-width: 700px;
+  }
   input {
     max-width: calc(50% - 10px);
   }

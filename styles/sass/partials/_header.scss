@@ -76,18 +76,17 @@ div.hero {
   .mobileNav li {
     padding-bottom: 10px;
     padding-top: 10px;
-    background: $sectionBackground;
+    background: $accent;
   }
   
-  .mobileNav li:hover,
-  .mobileNav li:focus {
-    background: lighten($accent, 20%);
+  .mobileNav li:active {
+    background: black;
   }
   
   .mobileNav a {
     display: block;
     width: 100%;
-    color: $black;
+    color: $white;
   }
   
   .openNav {
