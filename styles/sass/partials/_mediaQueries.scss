@@ -115,3 +115,28 @@
 		scroll-behavior: auto;
 	}
 }
+
+/**
+ * Media queries to adjust mobile menu when phone is in landscape mode
+ */
+@media(max-height: 325px) {
+  .mobileNav {
+    padding-top: 10px;
+  }
+}
+@media(max-height: 365px) {
+  .mobileNav {
+    padding-top: 30px;
+    a {
+      padding: 8px 0px;
+    }
+  }
+}
+@media(max-height: 420px) {
+  .mobileNav {
+    padding-top: 30px;
+    a {
+      padding: 12px 0px;
+    }
+  }
+}
