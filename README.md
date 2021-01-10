@@ -7,6 +7,7 @@ https://lucassilbernagel.com/
 Hi, I'm Lucas! I’m a web developer based in the Greater Toronto Area.
 
 My specialties include:
+  - Full stack development with MongoDB, Express, React, and Node.js
   - Translating beautiful and challenging designs into delightful and responsive user experiences
   - Conducting web accessibility reviews and implementing improvements to meet WCAG standards
   - Custom theme development for WordPress and Shopify
