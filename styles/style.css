@@ -646,8 +646,7 @@ h2 {
 
 .collaborationLink:hover,
 .collaborationLink:focus {
-  -webkit-text-decoration: underline #EE4D45;
-          text-decoration: underline #EE4D45;
+  text-decoration: none;
 }
 
 .used li {
