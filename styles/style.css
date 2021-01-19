@@ -568,7 +568,7 @@ h2 {
 .up:hover,
 .up:focus,
 .up:active {
-  color: #2B2B2B;
+  opacity: 100% !important;
 }
 
 .about p,
