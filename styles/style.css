@@ -214,6 +214,7 @@ template {
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -714,7 +715,7 @@ h2 {
 .blogPosts li {
   background: #F5F4F2;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   padding-bottom: 40px;
   text-align: center;
   border-radius: 10px;
@@ -748,8 +749,14 @@ h2 {
 }
 
 .blogPosts h5 {
-  font-style: italic;
-  text-decoration: underline;
+  color: #FFFFFF;
+  background: #2B2B2B;
+  padding: 3px;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .blogPosts p {
