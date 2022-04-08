@@ -343,17 +343,31 @@ header {
   display: block;
 }
 
+.logo div {
+  position: absolute;
+  top: 50px;
+}
+
 /* Tooltip text on logo */
 .toolTipText {
   visibility: hidden;
-  width: 250px;
+  width: 300px;
   background: #f7a6a2;
   color: #2B2B2B;
   padding: 5px;
   border-radius: 6px;
-  position: absolute;
+  position: relative;
   z-index: 1;
-  top: 50px;
+}
+
+.toolTipText:before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 20px;
+  border-bottom: 12px solid #f7a6a2;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
 }
 
 .logo:hover .toolTipText,
@@ -435,8 +449,8 @@ div.hero {
   border: none;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
@@ -450,8 +464,8 @@ div.hero {
   left: 0;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 #navIcon span:nth-child(1) {
