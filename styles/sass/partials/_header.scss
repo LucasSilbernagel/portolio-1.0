@@ -17,11 +17,11 @@ header {
 .logo div {
   position: absolute;
   top: 50px;
+  visibility: hidden;
 }
 
 /* Tooltip text on logo */
 .toolTipText {
-  visibility: hidden;
   width: 300px;
   background: lighten($accent, 20%);
   color: $black;

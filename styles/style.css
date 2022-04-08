@@ -346,11 +346,11 @@ header {
 .logo div {
   position: absolute;
   top: 50px;
+  visibility: hidden;
 }
 
 /* Tooltip text on logo */
 .toolTipText {
-  visibility: hidden;
   width: 300px;
   background: #f7a6a2;
   color: #2B2B2B;
