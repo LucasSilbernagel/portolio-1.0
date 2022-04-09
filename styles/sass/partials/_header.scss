@@ -12,6 +12,7 @@ header {
     width: 100%;
     max-width: 100%;
     display: block;
+    height: auto;
   }
 }
 .logo div {
@@ -241,6 +242,8 @@ h2 {
 
 .profilePhoto {
   border: 5px solid $white;
+  height: auto;
+  width: 100%;
 }
 
 .up {
