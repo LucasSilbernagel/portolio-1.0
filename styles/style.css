@@ -566,7 +566,6 @@ h2 {
 
 .profilePhoto {
   border: 5px solid #FFFFFF;
-  aspect-ratio: attr(width)/attr(height);
 }
 
 .up {
@@ -840,7 +839,7 @@ footer {
 
 footer .contact h4 {
   text-align: center;
-  color: #EE4D45;
+  color: #2B2B2B;
 }
 
 form {
@@ -864,6 +863,22 @@ textarea {
   border: none;
   -webkit-box-shadow: 2px 4px #BABABA;
           box-shadow: 2px 4px #BABABA;
+}
+
+::-webkit-input-placeholder {
+  color: #545454;
+}
+
+:-ms-input-placeholder {
+  color: #545454;
+}
+
+::-ms-input-placeholder {
+  color: #545454;
+}
+
+::placeholder {
+  color: #545454;
 }
 
 textarea {

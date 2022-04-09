@@ -4,7 +4,7 @@ footer {
 
 footer .contact h4 {
   text-align: center;
-  color: $accent;
+  color: $black;
 }
 
 form {
@@ -22,6 +22,9 @@ textarea {
   width: 100%;
   border: none;
   box-shadow: 2px 4px $grey;
+}
+::placeholder {
+  color: darken($grey, 40%);
 }
 
 textarea {
