@@ -566,7 +566,7 @@ h2 {
 
 .profilePhoto {
   border: 5px solid #FFFFFF;
-  width: 100%;
+  aspect-ratio: attr(width)/attr(height);
 }
 
 .up {
