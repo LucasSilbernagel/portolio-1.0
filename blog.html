@@ -19,7 +19,8 @@
   <script src="https://kit.fontawesome.com/6d54e0ab0d.js" crossorigin="anonymous"></script>
 
   <!-- Import Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet"> 
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"></noscript>
 
   <!-- Import animate-on-scroll styles -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -38,7 +39,7 @@
 
       <!-- Logo -->
       <div class="logo" tabindex="0">
-        <img src="./styles/assets/logo.png" alt="Lucas Silbernagel logo" class="logoImage">
+        <img src="./styles/assets/logo.webp" alt="Lucas Silbernagel logo" class="logoImage" height="100%" width="100%">
         <div>
           <p class="toolTipText">You're a curious one! This logo is my initials in viking runes.</p>
         </div>
@@ -59,7 +60,7 @@
 
       <!-- Mobile Navigation -->
       <div class="hamburger" id="hamburger">
-        <button id="navIcon">
+        <button id="navIcon" aria-label="mobile navigation menu">
           <span></span>
           <span></span>
           <span></span>
