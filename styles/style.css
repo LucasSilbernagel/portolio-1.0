@@ -796,7 +796,7 @@ h2 {
   -webkit-box-shadow: #2B2B2B 5px 10px;
           box-shadow: #2B2B2B 5px 10px;
   text-transform: uppercase;
-  background: #ea2016;
+  background: #d31c13;
   color: #FFFFFF;
   max-width: 450px;
   display: block;
@@ -806,7 +806,7 @@ h2 {
 .blog a:hover,
 .blog a:focus {
   cursor: pointer;
-  background: #d31c13;
+  background: #bc1911;
 }
 
 .blog a:active {

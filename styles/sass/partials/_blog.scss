@@ -64,7 +64,7 @@
   border-radius: 5px;
   box-shadow: $black 5px 10px;
   text-transform: uppercase;
-  background: darken($accent, 10%);
+  background: darken($accent, 15%);
   color: $white;
   max-width: 450px;
   display: block;
@@ -74,7 +74,7 @@
 .blog a:hover,
 .blog a:focus {
   cursor: pointer;
-  background: darken($accent, 15%);
+  background: darken($accent, 20%);
 }
 
 .blog a:active {
