@@ -105,3 +105,20 @@
   font-size: 1.2rem;
   text-align: center;
 }
+
+.blog .apiLink {
+  background: unset;
+  color: $black;
+  text-transform: none;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
+  display: inline;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+.blog .apiLink:hover,
+.blog .apiLink:focus,
+.blog .apiLink:active {
+  background: unset;
+}
