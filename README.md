@@ -1,7 +1,4 @@
-# lucassilbernagel.com
-
-## Live Link
-https://lucassilbernagel.com/
+# [lucassilbernagel.com](https://lucassilbernagel.com/)
 
 ## About Me
 Hi, I'm Lucas! I’m a web developer based in the Greater Toronto Area.
