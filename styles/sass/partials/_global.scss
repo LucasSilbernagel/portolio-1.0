@@ -44,7 +44,6 @@ h5,
 nav a,
 .hire,
 .projectLink,
-.blogLink,
 button {
   font-family: $headerText;
   font-weight: 700;
@@ -70,11 +69,11 @@ h3 {
 
 // Orange underline on section headers
 h3:after {
-  content: ""; 
-  display: block; 
-  margin: 0 auto; 
+  content: "";
+  display: block;
+  margin: 0 auto;
   width: 30px;
-  border-bottom: 4px solid $accent; 
+  border-bottom: 4px solid $accent;
   padding-bottom: 5px;
   position: absolute;
   left: 5px;
