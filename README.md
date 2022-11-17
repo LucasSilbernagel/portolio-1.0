@@ -1,39 +1,23 @@
-# Hi, I'm Lucas! I'm a front-end developer based in Toronto, Canada.
+# Portfolio 1.0
 
-I specialize in transforming designs, prototypes, and ideas into delightful React interfaces. I've been working as a developer since 2020, when I graduated from web development bootcamp. You can read more about my background and my journey into tech [here](https://lucascodepro.medium.com/im-a-web-developer-now-from-decoding-human-behaviour-to-building-the-modern-internet-b7c36a34dfd9).
+The first iteration of my web development portfolio.
 
-## Languages
-- HTML, CSS, JavaScript, TypeScript, PHP, Liquid
+![Screen Shot 2022-11-16 at 19 49 24](https://user-images.githubusercontent.com/57023164/202326930-c6f4d3e8-c12a-4bda-873c-046c44747024.png)
 
-## JavaScript libraries & frameworks
-- React, Gatsby, Node.js, Express, Recoil, jQuery
+## Live link
 
-## Styling
-- CSS3, MUI, Tailwind, SCSS, Styled Components
+https://lucassilbernagel.github.io/portolio-1.0/
 
-## Data
-- MongoDB, Firebase, REST, GraphQL
+## Tech stack
+- HTML5
+- SCSS
+- Vanilla JavaScript
+- Google Fonts
 
-## Testing
-- React Testing Library, Cypress, Jest, TestCafe
+## Icons
+- [DEVICON](https://devicon.dev/)
+- [Font Awesome](https://fontawesome.com/)
 
-## Other libraries
-- Highcharts, deck.gl, Lodash
-
-## Version control
-- Git, GitHub, GitLab
-
-## Content management
-- WordPress, Shopify, Strapi
-
-## Documentation
-- Confluence, Notion, Storybook, Slab, JSDocs, PropTypes
-
-## Other tools & technologies
-- VS Code, Command Line, WCAG, Figma, Jira, Shortcut, Mapbox, ESLint, Prettier, SonarCloud, Docker
-
-## Links
-- [Portfolio](https://lucassilbernagel.com/)
-- [LinkedIn](https://www.linkedin.com/in/lucassilbernagel/)
-- [Twitter](https://twitter.com/LucasCodePro)
-- [Medium](https://medium.com/@LucasCodePro)
+## Libraries
+- [animate-on-scroll](https://michalsnik.github.io/aos/)
+- [typed.js](https://github.com/mattboldt/typed.js/)
